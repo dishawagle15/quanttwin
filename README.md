@@ -51,3 +51,9 @@ export OPENAI_API_KEY="your-api-key-here"
 
 # Start the FastAPI server
 uvicorn app.main:app --reload
+## How we used OpenAI Models
+
+QuantTwin leverages the latest OpenAI capabilities to transform legacy quantitative code into modern, optimized Python.
+
+* **Codex for Code Transformation:** We utilize Codex’s specialized code-understanding capabilities to interpret legacy C++ loops. By feeding the AST-parsed logic into Codex with custom system prompts, the model accurately identifies discrete iterations and maps them to their mathematically equivalent NumPy/SciPy vectorized operations.
+* **GPT-5.6 for Structural Synthesis:** We leverage the reasoning power of GPT-5.6 to perform high-level analysis on the codebase. It acts as the "Architectural Brain" of the project—interpreting the structural dependencies extracted by tree-sitter, summarizing complex quantitative models, and generating the documentation and KaTeX equation patterns that drive our Inspector panel.
