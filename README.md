@@ -27,7 +27,7 @@ QuantTwin is a specialized development environment designed to bridge the gap be
 * Pydantic (Strict Data Validation)
 
 ---
-## How we used OpenAI Models
+## How I used OpenAI Models
 
 QuantTwin leverages the latest OpenAI capabilities to transform legacy quantitative code into modern, optimized Python.
 
